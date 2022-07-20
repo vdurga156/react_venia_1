@@ -1,0 +1,93 @@
+
+@mixin buttons  ($color){
+    border-radius: 15px 15px;
+    background-color: $color;
+    height: 20px;
+    width: 64px;
+}
+
+.btnclr { 
+   @include buttons(#172026)
+}
+.btnclr1 {  
+    @include buttons(#DFE1E2)
+}
+.btnclr2 { 
+    @include buttons(#2D9D78)
+}
+.btnclr3 { 
+    @include buttons(#FDBA5E)
+}
+.btnclr4 {   
+    @include buttons(#7950E8)
+}
+.btnclr5{  
+    @include buttons(#E34850)
+}
+.btnclr6 {   
+    @include buttons(#6408D3)
+}
+.btnclr7 {  
+    @include buttons(#F9009A)
+}
+.btnclr8 {  
+    @include buttons(#EB7327)
+}
+.btnclr9{   
+    @include buttons(#57CB76)
+}
+.filter_colors {
+    display: flex;
+    gap: 2px;
+}
+.more a{
+    color:black;
+}
+label{
+    padding-left: 10px;
+    padding-top:10px;
+}
+.filter{
+    padding-top:20px;
+    color: #181C24;
+    font-size: 14px;
+}
+
+
+.bread .multi{
+    display: none;
+  }
+  
+  // Media Quries
+  
+  @media only screen and (max-width: 768px){
+    .bread .desk{
+      display: none;
+    }
+    
+    .bread .multi{
+      display: block;
+    }
+    .multi .catalog{
+        font-size: 1.5rem;
+    }
+    .multi h5{
+      padding-top: 2rem;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .multi h6{
+      font-size: 1.2rem;
+      text-align: center;
+      padding-top: 3rem;
+    }
+  
+    .filters_1{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    .filters_1{
+        display:none;
+    }
+  }
